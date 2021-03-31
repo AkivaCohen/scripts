@@ -10,21 +10,21 @@ if test $len -ge 10 ; then
                 if test $? -eq 0 ; then
                     echo "$password" | grep -q [a-z]   
                       if test $? -eq 0 ; then
-                       echo "This is an awesome password!"
+                       tput setaf 2; echo "This is an awesome password!"
                        exit 0
                    else
                        echo "weak password Should include a lower case letter."
                        exit 1
                    fi
             else
-               echo "weak password Should include capital letter." 
+               tput setaf 1; echo "weak password Should include capital letter." 
                exit 1
             fi
      else
-       echo "please include numbers in password, it is weak password."   
+       tput setaf 1; echo "please include numbers in password, it is weak password."   
        exit 1
      fi
 else
-    echo "password lenght should be greater than or equal 10 hence weak password"
+    tput setaf 1; echo "password lenght should be greater than or equal 10 hence weak password"
     exit 1
 fi
