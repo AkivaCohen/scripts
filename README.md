@@ -18,11 +18,12 @@ Example usage:
 ## Bash:
 
 Bash script that verifies password strength according to the following parameters:
-* Length – minimum of 10 characters.
+* Length â€“ minimum of 10 characters.
 * Contain both alphabet and number.
 * Include both the small and capital case letters.
 
 Example usage:
 ```
 ./password-validator.sh "MyP@ssw0rd!"
+
 ```
